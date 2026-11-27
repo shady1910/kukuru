@@ -2,24 +2,27 @@ const memories = {
   openair: {
     title: 'Open Air',
     date: '27. Juni 2026 · FreeFall Plaza, Moers',
-    description: 'Ein Sommertag im Freizeitpark: Das kukuru Soundsystem spielte House bis in die Abendstunden. Auf der Tanzfläche brachte Wassernebel Abkühlung.',
+    description:
+      'Ein Sommertag im Freizeitpark: Das kukuru Soundsystem spielte House bis in die Abendstunden. Auf der Tanzfläche brachte Wassernebel Abkühlung.',
     image: 'assets/kukuru-archiv.webp',
     alt: 'Publikum vor der pink beleuchteten kukuru-Bühne',
     credit: 'Archivfoto aus der Ankündigung von Moers Marketing',
-    sourceLabel: 'Zum Rückblick'
+    sourceLabel: 'Zum Rückblick',
   },
   winter: {
     title: 'Winter Afterwork',
     date: '17. Dezember 2025 · Glühweinpyramide, Moers',
-    description: 'Die Winterausgabe brachte House auf den Weihnachtsmarkt. Getanzt wurde unter freiem Himmel an der Glühweinpyramide.',
-    sourceLabel: 'Zur Ankündigung'
+    description:
+      'Die Winterausgabe brachte House auf den Weihnachtsmarkt. Getanzt wurde unter freiem Himmel an der Glühweinpyramide.',
+    sourceLabel: 'Zur Ankündigung',
   },
   kastell: {
     title: 'House After Work',
     date: 'Juni 2025 · Kastellplatz, Moers',
-    description: 'Für die House After Work Party wurde der Kastellplatz mitten in der Moerser Innenstadt zur Open-Air-Tanzfläche.',
-    sourceLabel: 'Zur Ankündigung'
-  }
+    description:
+      'Für die House After Work Party wurde der Kastellplatz mitten in der Moerser Innenstadt zur Open-Air-Tanzfläche.',
+    sourceLabel: 'Zur Ankündigung',
+  },
 };
 
 const dialog = document.querySelector('.memory-dialog');
@@ -67,7 +70,8 @@ hero.dataset.motion = 'playing';
 motionToggle.addEventListener('click', () => {
   const paused = hero.dataset.motion === 'playing';
   hero.dataset.motion = paused ? 'paused' : 'playing';
-  motionToggle.setAttribute('aria-label', paused
-    ? 'Flamingo-Animation fortsetzen'
-    : 'Flamingo-Animation pausieren');
+  motionToggle.setAttribute(
+    'aria-label',
+    paused ? 'Flamingo-Animation fortsetzen' : 'Flamingo-Animation pausieren',
+  );
 });

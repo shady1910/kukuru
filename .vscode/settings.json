@@ -1,0 +1,50 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.trimAutoWhitespace": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/site.css": true,
+    "**/node_modules/**": true
+  },
+  "search.exclude": {
+    "**/site.css": true,
+    "**/assets/images/**": true,
+    "**/node_modules/**": true,
+    "package-lock.json": true
+  },
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": true,
+  "eslint.useFlatConfig": true,
+  "eslint.validate": ["javascript"],
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "stylelint.validate": ["css", "tailwindcss"],
+  "tailwindCSS.experimental.configFile": "style.css",
+  "tailwindCSS.includeLanguages": {
+    "tailwindcss": "css"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "[html][css][tailwindcss][javascript][json][jsonc][markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
